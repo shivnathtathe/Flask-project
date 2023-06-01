@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Phishing Detecion</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="main">
+        <span class="main-header">Phishing Website Detector with URL</span>
+        <form action="/" method="post">
+            <div class="inside-form">
+            <input type="text" name="url" id="url" placeholder="Enter URL : www.example.com"><br>
+            <button class="Check">CHECK</button>
+            </div>
+        </form>
+        {% if url %}
+        <h4>Your URL is : {{ url }}</h4>
+        {% endif %}
+    </div>
+</body>
+</html>

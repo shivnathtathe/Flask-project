@@ -18,4 +18,4 @@ def index():
 if __name__ != "__main__":
     pass
 else:
-    flask_app.run(port=2000, debug=True)
+    flask_app.run(debug=False,host='0.0.0.0')
